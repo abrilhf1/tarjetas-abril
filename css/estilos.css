@@ -24,7 +24,8 @@ header nav .container-fluid div ul li a{
 
 
 h1,
-h2{
+h2,
+h3{
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
 }
@@ -39,7 +40,8 @@ p{
 }
 
 h1 span,
-h2 span{
+h2 span,
+h3 span{
     color: #E8A163;
 }
 
@@ -198,7 +200,8 @@ section > div .mouse{
     padding: 24px;
 }
 
-#trabajos > h2{
+#trabajos > h2,
+.contenido > h2{
     padding-top: 120px;
     padding-left: 120px;
     padding-bottom: 20px;
@@ -225,6 +228,56 @@ section > div .mouse{
     transform: scale(1.1);
 }
 
+
+
+.contenido p.text{
+    padding-left: 120px;
+}
+
+.contenido div ul{
+    padding-top: 34px;
+}
+
+.contenido .parte-final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.contenido .linea{
+    border-bottom: 1px solid #E8A163;
+    height: 20px;
+    width: 100px;
+}
+
+
+.contenido .line{
+    border-bottom: 1px solid #E8A163;
+    height: 20px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.contenido .text-center span{
+    font-style: italic;
+}
+
+.contenido ul li{
+    list-style: none;
+    margin: 58px;
+}
+
+.contenido div ul li ion-icon{
+    font-size: 40px;
+    color: #E8A163;
+}
+
+.contenido div ul li h3{
+    font-size: 32px;
+}
+
 #contacto{
     display: flex;
     flex-wrap: wrap;
@@ -246,6 +299,12 @@ section > div .mouse{
     color: white;
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
+}
+
+@media screen and (min-width: 1900px){
+    .contenido .container{
+        max-width: 1841px;
+    }
 }
 
 @media screen and (max-width: 1440px){
@@ -383,7 +442,9 @@ section > div .mouse{
         flex-direction: column;
     }
 
-    #trabajos > h2 {
+    #trabajos > h2,
+    .contenido > h2,
+    .contenido p.text {
         padding-left: 32px;
     }
 
@@ -410,5 +471,24 @@ section > div .mouse{
 
     #contacto a{
         margin-top: 50px;
+    }
+
+    .contenido .container {
+        max-width: 330px;
+        text-align: center;
+    }
+
+    .contenido ul li{
+        margin: 0;
+        padding-bottom: 120px;
+    }
+    
+    .contenido ul{
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .contenido .text-center{
+        padding: 6px;
     }
 }
